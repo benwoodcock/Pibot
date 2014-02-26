@@ -1,0 +1,77 @@
+begin
+
+
+photo resistor HIGH
+calculate the light in the room
+if the room is dark then 
+inferred HIGH
+else room is light then
+inferred LOW 
+
+ultrasonic sensor emits signal
+activate trigger, send the message
+get the message back
+calculate the time
+calculate distance =  speed * time
+check if less than 30
+
+turn ultrasonic sensor 90 to the left 
+activate trigger, send the message
+get the message back
+calculate the time
+calculate distance =  speed * time
+check if less than 30
+
+turn ultrasonic sensor 180 to the right
+activate trigger, send the message
+get the message back
+calculate the time
+calculate distance =  speed * time
+check if less than 30
+
+temperature sensor one HIGH
+calculate temperature
+if temperature is more than 32 degress then 
+fan HIGH
+
+if distance is less than 30 then
+Motor one HIGH
+Motor two HIGH
+
+else 
+Motor one HIGH
+Motor two LOW
+(stop after 1.5 seconds)
+
+turn ultrasonic sensor 180 to the right
+activate trigger, send the message
+get the message back
+calculate the time
+calculate distance =  speed * time
+check if less than 30
+check if the distance is less than 30cm
+
+turn ultrasonic sensor 180 to the left
+activate trigger, send the message
+get the message back
+calculate the time
+calculate distance =  speed * time
+check if less than 30
+check if the distance is less than 30cm
+
+if distance is less than 30cm then 
+Motor one HIGH
+Motor two LOW
+(stop after 1.5 seconds)
+
+else
+Motor one HIGH
+Motor two HIGH
+
+check temperature from sensor one
+temperature sensor one HIGH
+calculate temperature
+if temperature is more than 32 degress then 
+fan HIGH
+
+end
