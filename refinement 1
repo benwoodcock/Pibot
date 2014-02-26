@@ -1,0 +1,24 @@
+begin
+
+turn on photo resistor 
+if its dark turn on inferred lights
+
+ultrasonic sensor emits signal
+turn ultrasonic sensor 90 to the left 
+turn ultrasonic sensor 180 to the right
+repeat above
+
+check temperature from sensor one
+if temperature is hot then turn on fan
+
+both motors turn on (moves wheels)
+
+calculate distance from the ultra sonic sensor 
+check if the distance is less than 30cm
+if distance is less than 30cm then stop one motor
+
+check temperature from sensor one
+if temperature is hot then turn on fan
+
+
+end
